@@ -3247,7 +3247,7 @@ exit:
 	if (rb[0] == 0) {
 		if (strncmp((uint8_t *)rb + 0x31, "HWC_Tama_Com_", 13) == 0)
 		{
-			((uint8_t *)rb)[0x30] = 0;
+			((uint8_t *)rb)[0x30] = 1;
 			// 0=not_allowed, 1=locked, 2=unlocked,
 			// 3=allowed_when_sl_is_unlocked,
 			// 4=allowed_since_sl_is_unlocked,
