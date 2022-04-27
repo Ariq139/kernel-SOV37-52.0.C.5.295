@@ -229,8 +229,8 @@ static void add_verity_corruption_tag(struct block_device *bdev,
 
 	count = snprintf(verity_blk, sizeof(verity_blk),
 			"%s %lld", bdev->bd_part->info->volname, blk);
-
-	rdtags_add_tag("rdtag_verity_corruption", verity_blk, count);
+/*
+	rdtags_add_tag("rdtag_verity_corruption", verity_blk, count);*/
 }
 
 /*
